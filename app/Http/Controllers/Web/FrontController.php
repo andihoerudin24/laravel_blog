@@ -36,4 +36,19 @@ class FrontController extends Controller
 
         return view('front', compact('categori', 'artikel', 'artikelall', 'artikelterkait'));
     }
+
+    public function about()
+    {
+        $categori = Categori::all();
+
+        return view('front.about', compact('categori'));
+    }
+
+
+    public function contact()
+    {
+        $categori = Categori::all();
+
+        return view('front.contact', compact('categori'));
+    }
 }
